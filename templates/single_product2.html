@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet"  href="{{ url_for('static',filename='styles/single.css')}}">
+    <body>
+        <div class="container">
+            <div class="main">
+              <div class="left-content">
+                <!-- main-big-img -->
+                <div class="big-img">
+                  <div class="nav-buttons">
+                    <div class="left">
+                      <i class="fas fa-chevron-circle-left fa-2x"></i>
+                    </div>
+                    <div class="right">
+                      <i class="fas fa-chevron-circle-right fa-2x"></i>
+                    </div>
+                  </div>
+                  <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" height="500px" width="500px" alt="" />
+                </div>
+          
+                
+              </div>
+              <div class="right-content">
+                <h2 class="product-heading">PUMA Grey Shoes</h2>
+                <p class="product-tagline">PUMA Grey Shoes by Zipcode design</p>
+                <p class="product-desc">
+                    Grey shoes are a classic and stylish choice for both casual and formal occasions. These shoes come in various shades of grey, from light to dark, allowing you to match them with a wide range of outfits. They are crafted from high-quality materials, providing comfort and durability.
+                </p>
+                <div class="stars">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <!-- green stars -->
+                </div>
+                <p class="product-review"><span>(4.0)</span> review based on 100</p>
+                <a href="{{ url_for('submit_complaint') }}">Submit Complaint/Review</a>
+                <h2>1500/-</h2>
+                <p>Dispatched in 5 working days</p>
+                <div class="product-buttons">
+                  <button class="active">ADD TO CART</button>
+                  <button>ADD TO WISHLIST</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-contents">
+              <!-- <div class="footer-content">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+              <div class="footer-content">
+                <i class="fas fa-truck fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div>
+              <!-- <div class="footer-content">
+                <i class="fas fa-box-open fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/single.css')}}">
+    <body>
+        <div class="container">
+            <div class="main">
+              <div class="left-content">
+                <!-- main-big-img -->
+                <div class="big-img">
+                  <div class="nav-buttons">
+                    <div class="left">
+                      <i class="fas fa-chevron-circle-left fa-2x"></i>
+                    </div>
+                    <div class="right">
+                      <i class="fas fa-chevron-circle-right fa-2x"></i>
+                    </div>
+                  </div>
+                  <!-- <img src="https://i.ibb.co/47Sk9QL/product-1.jpg" height="500px" width="500px" alt="" /> -->
+                  <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRubv_PVd3G-n4fsF0Vy-PG0c44H1gmeZUbMFCmumhP4kgehfa5GSArVBUK_FoYjzzkvSexSTgHKyKnSuRVkz7qhlz_ceIRrvJU3yfHfV700b3VmR0XqFsbHw&usqp=CAE" alt="" height="325px" />
+                </div>
+          
+                <!-- <div class="small-imgs"> -->
+                  <!-- small images -->
+                  <!-- <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
+                  <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
+                  
+          
+                </div> -->
+              </div>
+              <div class="right-content">
+                <h2 class="product-heading">Iphone 14 Pro</h2>
+                <p class="product-tagline">Unleash Limitless Possibilities – iPhone 14 Pro: Redefining Innovation</p>
+                <p class="product-desc">
+                  Experience innovation redefined with the iPhone 14 Pro. Boasting cutting-edge technology and an exquisite design, this flagship device delivers unparalleled performance and style. With its advanced camera system, stunning display, and powerful processor, the iPhone 14 Pro is the ultimate companion for capturing memories, staying connected, and unlocking endless possibilities.
+                </p>
+                <div class="stars">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <!-- green stars -->
+                </div>
+                <br>
+                <p class="product-review"><span>(5.0)</span> review based on 250</p>
+                <br>
+                <a href="{{ url_for('submit_complaint') }}">Submit Complaint/Review</a>
+                <br>
+                <h2>12500/-</h2>
+                <br>
+                <p>Dispatched in 7 working days</p>
+                <div class="product-buttons">
+                  <button class="active">ADD TO CART</button>
+                  <button>ADD TO WISHLIST</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-contents">
+              <!-- <div class="footer-content">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+              <div class="footer-content">
+                <i class="fas fa-truck fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div>
+              <!-- <div class="footer-content">
+                <i class="fas fa-box-open fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+    </body>
+</html>

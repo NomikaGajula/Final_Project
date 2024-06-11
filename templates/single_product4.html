@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/single.css')}}">
+    <body>
+        <div class="container">
+            <div class="main">
+              <div class="left-content">
+                <!-- main-big-img -->
+                <div class="big-img">
+                  <div class="nav-buttons">
+                    <div class="left">
+                      <i class="fas fa-chevron-circle-left fa-2x"></i>
+                    </div>
+                    <div class="right">
+                      <i class="fas fa-chevron-circle-right fa-2x"></i>
+                    </div>
+                  </div>
+                  <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
+                </div>
+          
+                <!-- <div class="small-imgs"> -->
+                  <!-- small images -->
+                  <!-- <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
+                  <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
+                  
+          
+                </div> -->
+              </div>
+              <div class="right-content">
+                <h2 class="product-heading">Sonata Black watch</h2>
+                <p class="product-tagline">Timeless Elegance, Sonata Black – Where Style Meets Precision.</p>
+                <p class="product-desc">
+                  Introducing Sonata Black: a sleek and sophisticated timepiece with a striking black dial, luminous hands, and reliable quartz movement. Crafted with a durable stainless steel case and comfortable black leather strap, it offers both style and functionality for any occasion. Elevate your wristwear with the understated luxury of Sonata Black.
+                </p>
+                <br>
+                <div class="stars">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <!-- green stars -->
+                </div>
+                <p class="product-review"><span>(5.0)</span> review based on 250</p>
+                <br>
+                <a href="{{ url_for('submit_complaint') }}">Submit Complaint/Review</a>
+                <br>
+                <h2>10000/-</h2>
+                
+                <p>Dispatched in 7 working days</p>
+                <div class="product-buttons">
+                  <button class="active">ADD TO CART</button>
+                  <button>ADD TO WISHLIST</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-contents">
+              <!-- <div class="footer-content">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+              <div class="footer-content">
+                <i class="fas fa-truck fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div>
+              <!-- <div class="footer-content">
+                <i class="fas fa-box-open fa-2x"></i>
+                <div class="footer-info">
+                  <h3>Secure payment</h3>
+                  <p>Don't worry, your money is in secure places</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+    </body>
+</html>

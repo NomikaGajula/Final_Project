@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/Google_Sheet.css')}}">
+  <link rel="stylesheet"  href="{{ url_for('static',filename='styles/home.css')}}">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Attach an input event listener to the phone input field
+      $("#phone").on("input", function() {
+        // Get the entered value
+        var inputValue = $(this).val();
+
+        // Check if the entered value is a valid 10-digit number
+        if (!/^\d{10}$/.test(inputValue)) {
+          // Display an error message
+          $("#error-message").text("Please enter a valid 10-digit number").show();
+        } else {
+          // Hide the error message if the entered value is a valid 10-digit number
+          $("#error-message").hide();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+      <div>
+        <div class="navbar" style="margin-top: 0%;">
+          <div class="logo">
+            <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a   href="{{ url_for('homepage') }}">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        </div>
+	<div class="container">
+		<form method="POST" action="/run_script" name="contact-form">
+			 <h4>Complaint Form/Review Form</h4>
+			<!--<input type="text" name="Number" placeholder="Number">
+			<input type="email" name="User_email" placeholder="Email"> -->
+     
+
+			<!-- <textarea type="text" id="user_complaint" name="complaint" rows="7" placeholder="Your Complaint"></textarea> -->
+			
+
+      <input type="text" name="Number" id="phone" required placeholder="Number" pattern="[0-9]{10}">
+      <div id="error-message" style="color: white; display: none;"></div>
+           <!-- <input type="tel" name="phone" id="phone" required placeholder="Number" pattern="[0-9]{10}"> -->
+          <input type="email" name="User_email" required placeholder="Email">
+          <textarea name="complaint" type="text" id="user_complaint" rows="7" required placeholder="Your Complaint/Review"></textarea>
+          <button type="submit" class="submit1"  >Submit</button>&nbsp;&nbsp;
+          <!-- <input type="submit" class="submit1" value="Submit" id="submit"> -->
+      <!-- <button type="button" class="submit1"  id="send-data-button" >Send Data</button> -->
+		</form>
+	</div>
+
+	<script src="{{ url_for('static',filename='js/Google_Sheet.js')}}"></script>
+  
+</body>
+</html>
